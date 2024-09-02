@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: #486951;
+  --primary-color-light: #639470;
+  --second-color: #EBE7D6;
+  --second-color-light: #F8F7F1;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +45,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
