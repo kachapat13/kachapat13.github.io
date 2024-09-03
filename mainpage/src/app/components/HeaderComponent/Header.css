@@ -1,0 +1,20 @@
+.header-logo:hover {
+    filter: drop-shadow(3px 3px 8px #ffffff50);
+    transform: scale(1.1);
+}
+
+.menu-text {
+
+    &:active,
+    &:hover {
+        font-size: 1.1em;
+        font-weight: 500;
+        color: white;
+        transition: 0.85s;
+    }
+
+    &:active {
+        font-size: 1.25em;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.75);
+    }
+}
