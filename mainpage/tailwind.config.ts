@@ -25,7 +25,8 @@ const config: Config = {
     extend: {
       colors: customColors,
       backgroundImage: {
-        'grainy': "url('/textures/grainy.jpg')",
+        // 'grainy': "url('/textures/grainy.jpg')",
+        'grainy': "url('/textures/grainy.svg')",
         'logo': "url('/logo.png')",
         'primary-dark-gradient': `linear-gradient(115deg, ${customColors.primary.light} 0%, ${customColors.primary.normal} 30%, ${customColors.secondary.dark} 100%)`,
       },

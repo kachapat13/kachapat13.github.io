@@ -18,10 +18,7 @@ export function Header() {
       <div className="header-logo bg-logo w-[150px] h-full [background-size:85px] bg-center bg-no-repeat [transition:all_1s]"></div>
       <div className="flex-1 flex gap-32 justify-center w-full items-center mx-[5rem] my-[1.5rem] text-xl">
         {menuList.map((m, index) => (
-          <span
-            key={index}
-            className="menu-text cursor-pointer text-gray-500 font-medium"
-          >
+          <span key={index} className="menu-text cursor-pointer font-medium">
             {m.name}
           </span>
         ))}
