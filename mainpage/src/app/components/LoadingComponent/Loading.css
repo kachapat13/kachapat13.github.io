@@ -26,32 +26,15 @@
 
 .loader-text {
     animation: dots 3s infinite;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.85);
-    font-size: large;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+    font-size: larger;
     font-weight: 500;
-    padding-top: 1.75rem;
+    font-style: italic;
+    padding-top: 1.65rem;
 
     &::after {
         content: "";
         animation: inherit;
-    }
-}
-
-@keyframes dots {
-    0% {
-        content: "";
-    }
-
-    33% {
-        content: ".";
-    }
-
-    66% {
-        content: "..";
-    }
-
-    100% {
-        content: "...";
     }
 }
 
@@ -82,14 +65,4 @@
     border-radius: 30%;
     background: theme("colors.secondary.normal");
     animation: wave 5s linear infinite;
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

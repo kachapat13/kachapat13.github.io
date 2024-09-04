@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./styles/animation.css);
 
 /* :root {
   --primary-color: #486951;

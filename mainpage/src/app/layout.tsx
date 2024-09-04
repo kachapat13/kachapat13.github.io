@@ -3,6 +3,7 @@ import { Poppins, Prompt } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/HeaderComponent/Header";
 import Loading from "./components/LoadingComponent/Loading";
+import { LoadingProvider } from "./components/LoadingComponent/LoadingContext";
 
 const poppins = Poppins({
   subsets: ["latin"], // Specify the subsets you need
@@ -34,10 +35,12 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${prompt.variable} bg-primary-dark-gradient`}
       >
-        <Loading />
-        <Header />
-        <div className="bg-grainy absolute inset-0 mix-blend-overlay opacity-60 pointer-events-none"></div>
-        {children}
+        <LoadingProvider>
+          <Loading />
+          <Header />
+          <div className="bg-grainy absolute inset-0 mix-blend-overlay opacity-60 pointer-events-none"></div>
+          {children}
+        </LoadingProvider>
       </body>
     </html>
   );

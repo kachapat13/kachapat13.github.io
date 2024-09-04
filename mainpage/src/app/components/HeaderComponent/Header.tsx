@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header
-      className="splitter-fade flex w-full min-h-[80px] h-[80px]"
+      className="splitter-fade flex w-full min-h-[80px] h-[80px] text-center"
       style={{ backdropFilter: "blur(1px)" }}
     >
       <div className="header-logo bg-logo w-[150px] h-full [background-size:85px] bg-center bg-no-repeat [transition:all_1s]"></div>
