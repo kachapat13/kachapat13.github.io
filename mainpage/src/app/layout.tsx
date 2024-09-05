@@ -38,7 +38,7 @@ export default function RootLayout({
         <LoadingProvider>
           <Loading />
           <Header />
-          <div className="bg-grainy absolute inset-0 mix-blend-multiply opacity-60 pointer-events-none"></div>
+          <div className="bg-grainy absolute inset-0 mix-blend-multiply opacity-25 pointer-events-none"></div>
           {children}
         </LoadingProvider>
       </body>
