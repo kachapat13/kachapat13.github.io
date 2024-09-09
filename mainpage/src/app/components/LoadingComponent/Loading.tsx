@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./Loading.css";
-import { useLoading } from "./LoadingContext";
+import { useLoading } from "../../context/LoadingContext";
 
 function Loading() {
   const { loading } = useLoading();

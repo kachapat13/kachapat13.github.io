@@ -22,9 +22,13 @@ const config: Config = {
     flowbite.content(),
   ],
   theme: {
+    fontFamily: {
+      'playfair-display': ['Playfair Display', 'Prompt'],
+    },
     extend: {
       colors: customColors,
       backgroundImage: {
+        'iridescent-fluid': "url('/img/iridescent_fluid.png')",
         'grainy': "url('/textures/grainy.png')",
         'logo': "url('/logo.png')",
         'primary-dark-gradient': `linear-gradient(115deg, ${customColors.primary.light} 0%, ${customColors.primary.normal} 30%, ${customColors.secondary.dark} 100%)`,
