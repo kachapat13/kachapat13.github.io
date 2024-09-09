@@ -5,6 +5,7 @@ import { Header } from "./components/HeaderComponent/Header";
 import Loading from "./components/LoadingComponent/Loading";
 import { LoadingProvider } from "./context/LoadingContext";
 import { ScreenSizeProvider } from "./context/SizeScreenContext";
+import Footer from "./components/FooterComponent/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"], // Specify the subsets you need
@@ -50,6 +51,7 @@ export default function RootLayout({
             <main className="flex flex-col w-full h-full">
               <Header />
               <div className="relative flex-1 w-full h-full">{children}</div>
+              <Footer />
             </main>
           </LoadingProvider>
         </ScreenSizeProvider>

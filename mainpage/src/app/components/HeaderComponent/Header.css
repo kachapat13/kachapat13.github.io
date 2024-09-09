@@ -3,7 +3,7 @@ header {
 }
 
 .header-logo:hover {
-    filter: drop-shadow(3px 3px 8px theme("colors.secondary.light_75"));
+    filter: drop-shadow(3px 3px 8px rgba(theme("colors.secondary.light"), 0.75));
     transform: scale(1.1);
 }
 

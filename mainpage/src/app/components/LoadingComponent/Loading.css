@@ -7,7 +7,7 @@
     margin: 0;
     position: absolute;
     z-index: 9999;
-    background-color: theme("colors.primary.normal_75");
+    background-color: rgba(theme("colors.primary.normal"), 0.75);
     /* backdrop-filter: blur(0.5px); */
     /* transition: all 0.5s; */
 
@@ -44,7 +44,7 @@
     height: 12.5rem;
     border-radius: 50%;
     position: relative;
-    box-shadow: 0 0 30px 4px theme("colors.secondary.normal") inset,
+    box-shadow: 0 0 30px 4px rgb(theme("colors.secondary.normal")) inset,
         0 5px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
@@ -57,12 +57,12 @@
     height: 100%;
     border-radius: 45%;
     top: -40%;
-    background-color: theme("colors.secondary.light_75");
+    background-color: rgba(theme("colors.secondary.light"), 0.75);
     animation: wave 5s linear infinite;
 }
 
 .loader:before {
     border-radius: 30%;
-    background: theme("colors.secondary.normal");
+    background: rgb(theme("colors.secondary.normal"));
     animation: wave 5s linear infinite;
 }
