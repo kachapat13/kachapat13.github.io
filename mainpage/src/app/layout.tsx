@@ -47,7 +47,7 @@ export default function RootLayout({
         <ScreenSizeProvider>
           <LoadingProvider>
             <Loading />
-            <div className="bg-grainy absolute inset-0 mix-blend-multiply opacity-25 pointer-events-none z-[100]"></div>
+            <div className="bg-grainy absolute inset-0 mix-blend-multiply opacity-20 pointer-events-none z-[100]"></div>
             <main className="flex flex-col w-full h-full">
               <Header />
               <div className="relative flex-1 w-full h-full">{children}</div>
